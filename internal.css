@@ -1,4 +1,3 @@
-/* the style just for f*/
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap");
 
 * {
@@ -334,7 +333,7 @@ label b {
 .timer {
   display: flex;
   flex-direction: row;
-  gap: 120px;
+  gap: 100px;
   margin-left: 40rem;
 }
 
@@ -399,6 +398,17 @@ label b {
   border-radius: 50%;
   display: inline-block;
 }
+
+.fakedot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: var(--gray7);
+  border-radius: 50%;
+  display: inline-block;
+}
+
 .active,
 .dot:hover {
   background-color: var(--bronze);
@@ -427,12 +437,6 @@ label b {
 }
 
 .home {
-  margin-left: 80rem;
-  cursor: pointer;
-  color: var(--gray7);
-  font-size: 20px;
-}
-.home {
   margin-left: 10rem;
   cursor: pointer;
   color: var(--gray7);
@@ -447,3 +451,11 @@ label b {
 .home:hover {
   color: var(--gray6);
 }
+.home2 {
+  margin-left: 4rem;
+  cursor: pointer;
+  color: var(--gray7);
+  font-size: 20px;
+  text-decoration: none;
+}
+
