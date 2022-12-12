@@ -1,6 +1,3 @@
-<!---d. form page-->
-<!---Contains: text, video, images, form-->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -14,17 +11,17 @@
 
     <link
       rel="icon"
-      href="../../Project 2/Icons/logo1.png"
+      href="../../B00930227_A2/Icons/logo1.png"
       alt="Birmingham 2022 Commonwealth Games Logo"
     />
 
     <link
       rel="stylesheet"
       type="text/css"
-      href="../../Project 2/Styles/internal.css"
+      href="../../B00930227_A2/Styles/internal.css"
     />
 
-    <script defer src="../../Project 2/Scripts/script.js"></script>
+    <script defer src="../../B00930227_A2/Scripts/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
     <title>Birmingham 2022 Commonwealth Games - Form</title>
@@ -38,7 +35,7 @@
           <li><img
                 class="logolistpag1"
                 alt="Commonwealth Games logo"
-                src="../../Project 2/Icons/logo1.png"
+                src="../../B00930227_A2/Icons/logo1.png"
               />
            
           </li>
@@ -46,7 +43,7 @@
           <li>
             <img
               class="logolistpag2 logolist"
-              src="../../Project 2/Photos/Sponsors/longines.png"
+              src="../../B00930227_A2/Photos/Sponsors/longines.png"
               alt="Longines logo"
             />
           </li>
@@ -54,23 +51,24 @@
             <li>
               <img
                 class="logolistpag3 logolist"
-                src="../../Project 2/Photos/Sponsors/uniofbirmingham.png"
+                src="../../B00930227_A2/Photos/Sponsors/uniofbirmingham.png"
                 alt="University of BIrmingham logo"
               />
             </li>
-            <li><img class="logolistpag4 logolist" src="../../Project 2/Photos/Sponsors/eon.png" alt="E-on logo" /></li>
+            <li><img class="logolistpag4 logolist" src="../../B00930227_A2/Photos/Sponsors/eon.png" alt="E-on logo" /></li>
            
 
-            <li><img class="logolistpag5 logolist" src="../../Project 2/Photos/Sponsors/chase.png" alt="Chase logo" /></li>
+            <li><img class="logolistpag5 logolist" src="../../B00930227_A2/Photos/Sponsors/chase.png" alt="Chase logo" /></li>
             <li><img
               class="logolistpag6 logolist"
-              src="../../Project 2/Photos/Sponsors/severnt.png"
+              src="../../B00930227_A2/Photos/Sponsors/severnt.png"
               alt="Severn-Trent logo"
             /></li>
-           <li><img class="logolistpag7 logolist" src="../../Project 2/Photos/Sponsors/dettol.png" alt="Dettol logo" /></li>
+           <li><img class="logolistpag7 logolist" src="../../B00930227_A2/Photos/Sponsors/dettol.png" alt="Dettol logo" /></li>
           </ul>
           
-          <a class="home" href="../../Project 2/Pages/index.html">Home</a>
+          <a class="home" href="../../B00930227_A2/index.html">Home</a>
+          <a class="home2" href="../../B00930227_A2/Pages/accesindex.html" target="_blank">Accessibility</a>
            
         
           <div class="timer">
@@ -96,10 +94,10 @@
       <div class="slides">
         <div class="slide transition">
       <div class="listp">
-      <form action="action_page.php" method="post">
+      <form action="fsuccess.html" method="post">
         <div class="imgcontainer">
           <h1 class="table-page-h1-listpag">
-            <img class="logoimg" src="../../Project 2/Icons/logo3.png" />Tickets
+            <img class="logoimg" src="../../B00930227_A2/Icons/logo3.png" />Tickets
           </h1>
           <p class="texttick">Thank you for being part of the Birmingham 2022 Commonwealth Games! </p>
         </div>
@@ -127,15 +125,15 @@
             name="eml"
             required
           />
-          <button class="btnform" type="submit">Sign Up</button>
+          <button class="btnform" type="submit">Log in</button>
 
           <div class="checkbox">
-            <input type="checkbox" id="snews" name="sendnews" value="snews" />
-            <label for="snews">Want us to send you the latest news?</label>
+            
+            
           </div>
         </div>
 
-        <span class="psw">Forgot <a href="#">password?</a></span>
+        <span class="psw">Don't own an account? Click <a class="fakedot"></a>below!</span>
       </form>
     </div>
 
@@ -144,69 +142,53 @@
 
 
   <div class="listp">
-    <form action="action_page.php" method="post">
+    <form action="fsuccess.html" method="post">
       <div class="imgcontainer">
+        <h1 class="table-page-h1-listpag">
+          <img class="logoimg" src="../../B00930227_A2/Icons/logo3.png" />Tickets
+        </h1>
         
-       
       </div>
 
       <div class="containerr">
-        <img class="card" src="../../Project 2/Icons/credit-card.png">
+        <label for="uname"><b>Username</b></label>
+        <input
+          type="text"
+          placeholder="Enter Username"
+          name="uname"
+          required
+        />
 
-        <label for="num"><b>Card Number</b></label>
+        <label for="psw"><b>Password</b></label>
         <input
-          type="text"
-          placeholder="Enter Card Number"
-          name="num"
+          type="password"
+          placeholder="Enter Password"
+          name="psw"
           required
         />
-        <label for="name"><b>Cardholder Name</b></label>
+        <label for="psw"><b>Verify Password</b></label>
         <input
-          type="text"
-          placeholder="Cardholder's Name"
-          name="name"
+          type="password"
+          placeholder="Enter Password"
+          name="psw"
           required
         />
-<div class="rowinput">
-        <label for="month"></label>
-        <input
-        id="little"
-          type="text"
-          placeholder="MM"
-          name="month"
-          required
-        />
-        <label for="year"></label>
-        <input
-        id="little"
-          type="text"
-          placeholder="YY"
-          name="year"
-          required
-        />
-        <label for="cvv"></label>
-        <input
-        id="little"
-          type="text"
-          placeholder="CVV"
-          name="cvv"
-          required
-        />
-        <label class="little"for="numbertickets"><b>Tickets</b></label>
-        <input
-          id="little"
-          type="number"
-          placeholder=" 0"
-          name="number"
-          required
-        />
+        <label for="eml"><b>E-mail Adress</b></label>
+          <input
+            type="text"
+            placeholder="Enter E-mail Adress"
+            name="eml"
+            required
+          />
+        <button class="btnform" type="submit">Sign Up</button>
+
+        <div class="checkbox">
+          
+          
+        </div>
       </div>
-        <button class="btnform" type="submit">Pay Now</button>
 
       
-      </div>
-
-     
     </form>
   </div>
 
@@ -214,6 +196,7 @@
 </div>
 
   <div class="dots">
+    
     <span class="dot" onclick="currentSlide(1)"></span>
     <span class="dot" onclick="currentSlide(2)"></span>
   </div>
@@ -255,6 +238,11 @@
 </ul>
     </div>
     </div>
+  
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
 
+</html>
   </body>
 </html>
